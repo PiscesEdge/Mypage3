@@ -1,0 +1,68 @@
+<!--main nav-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-navy">
+    <div class="container-fluid">
+      <img class="nav-pic" style="width: 70px; height: 70px;" src="../Assets/images/logo.png">
+      <!-- <a class="navbar-brand" href="/">My Page</a> -->
+      <!--hamburger bar-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!--ms-auto for left, me-auto for right-->
+        
+        <!--to make nav bar active-->
+        <% if (title == "Home") { %>   <!--NAV BAR NOT LIGHTING UP when on page??-->
+        <li class="nav-item active">
+        <% } else { %>
+        <li class="nav-item">
+        <% } %>
+            <a class="nav-link" href="/home"><i class="fa-solid fa-lg fa-house-laptop"></i> Home </a> <!--fontawesome copied code goes as i class in here-->
+          </li>
+      
+        <% if (title == "About") {%>
+        <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item ">
+        <% } %>
+            <a class="nav-link " href="/about"><i class="fa-regular fa-address-card"></i> About </a>
+          </li>
+  
+        <% if (title == "projects") {%>
+        <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item ">
+        <% } %>
+            <a class="nav-link " href="/projects"><i class="fa-brands fa-product-hunt"></i> Projects </a>
+          </li>
+  
+        <% if (title == "Services") {%>
+        <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item ">
+        <% } %>
+            <a class="nav-link " href="/services"><i class="fa-solid fa-gear"></i> Services </a>
+          </li>
+  
+        <% if (title == "Contact us") {%>
+        <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item ">
+        <% } %>
+            <a class="nav-link " href="/contactus"><i class="fa-regular fa-phone"></i> Contact Us </a>
+          </li>
+
+        <% if (title == "Contact") {%>
+        <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item ">
+        <% } %>
+            <a class="nav-link " href="/contact-list"><i class="fa-regular fa-address-book"></i></i> Contacts </a>
+          </li>
+
+
+
+
+            </div>
+    </div>
+  </nav>

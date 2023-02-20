@@ -1,0 +1,30 @@
+<!--Vida Majd, ID 301238005, Assignment 1, Feb 5,2023-->
+
+<%- include ('partials/header.ejs') %>
+<%- include('partials/main_nav.ejs') %>
+
+<!--About me-->
+<div>
+  <h2 class="about-me">About Me</h2>
+  <hr style="width:500px; height: 5px; margin: auto; color: black;" class="about-line"> <br> 
+  <img class="about-pic" src="../Assets/images/vivi.jpg" alt="vivi's picture"> <br>
+  <hr style="width:500px; height: 5px; margin: auto; color: black;" class="about-line"> <br>
+  
+  <p class="contact-section-p1"> I'm Vida, a scientist/software engineer/artist. I like to mix up my expertise in all three fields and create unique projects </p> <br>
+  <br><br><br>
+
+<div class="hero-image">
+<div class="hero-text">
+  <!-- <button class="home-button"  >Let's Go <a href="/views/about.ejs"></a></button> -->
+<button class="resume-button" onClick="myFunction()"> Download Resume </button>
+  <script>
+    function myFunction() {
+      window.location.href = "../Assets/images/resume.pdf";
+    }
+  </script>
+</div><br><br>
+</div>
+
+
+<%- include('partials/bottom_nav.ejs') %>
+<%- include('partials/footer.ejs') %>
